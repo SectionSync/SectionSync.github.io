@@ -1,0 +1,143 @@
+/* General Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 80px; /* Add bottom padding to account for fixed footer */
+}
+
+/* Main Container */
+.container {
+    flex: 1;
+    width: 70%;
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Header */
+header {
+    background: #002E5D; /* BYU-I Navy Blue */
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #FFD200; /* Gold */
+    color: #002E5D; /* Navy Blue */
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #002E5D;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Report Container */
+#reportContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Piece Details */
+.piece-details, .instrument-info {
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding for better visual separation */
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.piece-header h3, .instrument-info span {
+    font-weight: bold;
+    color: #002E5D;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, .container, nav ul li a, header h1 {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .piece-details, .instrument-info {
+        padding: 10px;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+.highlighted {
+    background-color: yellow; /* Apply your desired highlighting effect */
+}
